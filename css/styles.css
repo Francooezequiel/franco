@@ -172,8 +172,8 @@ html {
 /* ACA COMIENZA ACOMODAR MI INCIO */
 #padre-section {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 50%;
+    grid-template-columns: 1fr;
+    width: 80%;
     margin: 0 auto;
     grid-template-areas: "informacion"
     ;
@@ -181,16 +181,10 @@ html {
     align-items: center;
     
 }
-@media screen and (max-width: 1900px) {
-    #padre-section {
-        width: 100%;
-        margin: 0;
-        grid-template-columns: 1fr;
-        
-    }
-    
 
-}
+
+
+
 .padre-inicio {
     display: flex;
     text-align: center;
@@ -198,7 +192,9 @@ html {
     align-items: center;
     margin-top: 10rem;
 }
-@media screen and (max-width: 1050px) {
+
+
+@media screen and (max-width: 1300px) {
     .padre-inicio {
         flex-direction: column;
     }
@@ -213,7 +209,7 @@ html {
     align-items: center;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
     .padre-inicio2 {
         flex-direction: column;
     }
