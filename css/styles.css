@@ -50,18 +50,13 @@ html {
     width: 20rem;
 }
 
-
-
-#navegacion li {
+/* modificando boostrap nav */
+.color-nav {
     background-color: rgb(253,132,157);
-    padding: .3rem 1rem;
-    
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
-#navegacion {
-    display: flex;
-    gap: 0.8rem;
-}
 
 
 
@@ -72,12 +67,6 @@ html {
     
 }
 
-#navegacion li a {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-}
 
 /*productos*/
 #productos-entrenamientos {
@@ -181,9 +170,6 @@ html {
     align-items: center;
     
 }
-
-
-
 
 .padre-inicio {
     display: flex;
@@ -301,10 +287,39 @@ p {
     grid-template-columns: repeat(2 ,1fr);
 }
 
+
+
 .nutricion {
     width: 80%;
     padding-left: 20rem;
 }
+
+@media screen and (max-width: 1700px) {
+    #padre-nutricion {
+        grid-template-columns: 1fr;
+    width: 100%;
+    
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    #padre-nutricion {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nutricion {
+        width: 100%;
+        
+    }
+}
+
+
+
+
 
 .padre-nutricion {
     display: flex;
