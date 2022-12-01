@@ -1,0 +1,30 @@
+#formulario-contacto {
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 35rem;
+  }
+  
+  .div-formulario {
+    text-align: center;
+    font-size: 5rem;
+  }
+  
+  .input-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: none;
+    padding: 0.6rem 0.3rem;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  .formulario {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }

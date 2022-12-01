@@ -1,0 +1,74 @@
+#productos-entrenamientos {
+    grid-area: productos;
+  }
+  
+  #productos-entrenamientos h2,
+  #productos-entrenamientos p {
+    text-align: center;
+  }
+  
+  .profe-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+  }
+  
+  @media screen and (max-width: $pantalla-grande) {
+    .profe-card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: $pantalla-mediana) {
+    .profe-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card-profe {
+    @include flex-column-center;
+    width: 16rem;
+    border: solid 2px $fuente-primaria;
+    padding: 1rem;
+  }
+  
+  .card-profe img {
+    height: 15rem;
+  }
+  
+  /*banner cards*/
+  #banner-card {
+    grid-area: banner;
+    background-color: $fuente-primaria;
+    margin-top: 4rem;
+    padding: 2rem;
+  }
+  
+  #banner-card h2 {
+    text-align: center;
+  }
+  
+  .padre_banner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  
+  @media screen and (max-width: $pantalla-grande) {
+    .padre_banner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: $pantalla-mediana) {
+    .padre_banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .banner-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

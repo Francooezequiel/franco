@@ -1,0 +1,22 @@
+#grilla-body {
+    display: grid;
+    grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+  }
+  
+  #header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $fuente-primaria;
+    margin-bottom: 4rem;
+  }
+  
+  @media screen and (max-width: $pantalla-grande) {
+    #header {
+      flex-direction: column;
+    }
+  }
+  

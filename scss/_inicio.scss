@@ -1,0 +1,45 @@
+#padre-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-areas: "informacion";
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .padre-inicio {
+    @include flex-center;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  
+  @media screen and (max-width: $pantalla-xg) {
+    .padre-inicio {
+      flex-direction: column;
+    }
+  }
+  .padre-inicio2 {
+    @include flex-center;
+    flex-direction: row-reverse;
+    text-align: center;
+    
+  }
+  
+  @media screen and (max-width: $pantalla-xg) {
+    .padre-inicio2 {
+      flex-direction: column;
+    }
+  }
+  .hijo-inicio {
+    margin-left: 2rem;
+  }
+  
+  .hijo-inicio2 {
+    margin-right: 2rem;
+  }
+  
+  .imagen-imagen {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }

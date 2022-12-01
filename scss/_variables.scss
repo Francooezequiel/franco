@@ -1,0 +1,18 @@
+$pantalla-mediana: 767px;
+$pantalla-grande: 992;
+$pantalla-xg: 1300px;
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+$fuente-primaria: #fd849d;

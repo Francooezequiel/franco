@@ -1,337 +1,286 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 html {
-    font-size: 62.5;
-}
-
-
-/* Header cabecera etc*/
-
-#grilla-body {
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "productos productos productos"
-    "banner banner banner"
-    "footer footer footer";
-
-    grid-template-columns: repeat(3, 1fr);
-    background-color: white;
-    
-}
-
-#header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(253,132,157);
-    margin-bottom: 4rem;
-    
-}
-
-@media screen and (max-width: 993px) {
-    #header {
-        flex-direction: column;
-    }
-    
+  font-size: 62.5;
 }
 
 .logo {
-    height: 20rem;
-    width: 20rem;
+  height: 20rem;
+  width: 20rem;
 }
-
-/* modificando boostrap nav */
-.color-nav {
-    background-color: rgb(253,132,157);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-
-
-
-@media screen and (max-width: 654px) {
-    #navegacion {
-        flex-direction: column;
-    }
-    
-}
-
-
-/*productos*/
-#productos-entrenamientos {
-    grid-area: productos;
-}
-
-#productos-entrenamientos h2,
-#productos-entrenamientos p { text-align: center;}
-
-.profe-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
-    justify-items: center;
-}
-
-@media screen and (max-width: 992px) {
-    .profe-card {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-}
-
-@media screen and (max-width: 767px) {
-    .profe-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-
-.card-profe {
-    width: 16rem;
-    border: solid 2px pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-
-}
-
-.card-profe img {
-    height: 15rem;
-}
-/*banner cards*/
-
-#banner-card {
-    grid-area: banner;
-    background-color: rgb(253,132,157);
-    margin-top: 4rem;
-    padding: 2rem;
-}
-
-#banner-card h2 {
-    text-align: center;
-}
-
-.padre_banner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-}
-@media screen and (max-width: 992px) {
-    .padre_banner {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .padre_banner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-.banner-caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/*footer */
-
-#footer {
-    grid-area: footer;
-    margin-top: 15rem;
-}
-/* aca termina header cabecera etc */
-
-
-/* ACA COMIENZA ACOMODAR MI INCIO */
-#padre-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: 0 auto;
-    grid-template-areas: "informacion"
-    ;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.padre-inicio {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-}
-
-
-@media screen and (max-width: 1300px) {
-    .padre-inicio {
-        flex-direction: column;
-    }
-    
-}
-
-.padre-inicio2 {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 1300px) {
-    .padre-inicio2 {
-        flex-direction: column;
-    }
-    
-}
-
-.hijo-inicio {
-    margin-left: 2rem;
-}
-.hijo-inicio2 {
-    margin-right: 2rem;
-}
-
-.imagen-imagen {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* aca comienzo acomodar mi inicio */
-
-
 
 ul {
-    list-style-type: none;
-    font-size: 25px;
+  list-style-type: none;
+  font-size: 25px;
 }
 
-
 h2 {
-    color: rgb(253,132,157);
-    font-size: 30px;
-    font-family: 'Roboto',
-    
-    
+  color: #fd849d;
+  font-size: 30px;
+  font-family: "Roboto";
 }
 
 p {
-    color: black;
-    font-size: 25px;
-    font-family: sans-serif;
-    margin-top: 1.5rem;
+  color: black;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-top: 1.5rem;
 }
 
-/* aca termino de acomodar mi inicio */
-    
-    /* aca comienzo acomodar el formulario */
-
-    #formulario-contacto {
-        color: black;
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        height: 35rem;
-        
-    }
-
-
-.div-formulario {
-    text-align: center;
-    font-size: 5rem;
+#grilla-body {
+  display: grid;
+  grid-template-areas: "header header header" "productos productos productos" "banner banner banner" "footer footer footer";
+  grid-template-columns: repeat(3, 1fr);
+  background-color: white;
 }
 
-    .input-div {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 2rem;
-        padding: 2rem;
-        background: none;
-        padding: .6rem .3rem;
-        border: none;
-        font-size: 2rem;
-        
-    }
-    .formulario {
-        display: flex;
-        justify-content: space-around;
-        font-size: 2rem;
-        margin-top: 1rem;
-        
-    }
+#header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fd849d;
+  margin-bottom: 4rem;
+}
 
-    /* aca termino de acomodar el formulario  */
+@media screen and (max-width: 992) {
+  #header {
+    flex-direction: column;
+  }
+}
+#padre-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-areas: "informacion";
+  justify-content: center;
+  align-items: center;
+}
 
-/* PLAN DE NUTRICION */
+.padre-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10rem;
+}
 
+@media screen and (max-width: 1300px) {
+  .padre-inicio {
+    flex-direction: column;
+  }
+}
+.padre-inicio2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .padre-inicio2 {
+    flex-direction: column;
+  }
+}
+.hijo-inicio {
+  margin-left: 2rem;
+}
+
+.hijo-inicio2 {
+  margin-right: 2rem;
+}
+
+.imagen-imagen {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.color-nav {
+  background-color: #fd849d;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 654px) {
+  #navegacion {
+    flex-direction: column;
+  }
+}
 #padre-nutricion {
-    display: grid;
-    grid-area: productos;
-    grid-template-columns: repeat(2 ,1fr);
+  display: grid;
+  grid-area: productos;
+  grid-template-columns: repeat(2, 1fr);
 }
-
-
 
 .nutricion {
-    width: 80%;
-    padding-left: 20rem;
+  width: 80%;
+  padding-left: 20rem;
 }
 
 @media screen and (max-width: 1700px) {
-    #padre-nutricion {
-        grid-template-columns: 1fr;
+  #padre-nutricion {
+    grid-template-columns: 1fr;
     width: 100%;
-    
-    }
-    
+  }
 }
-
 @media screen and (max-width: 700px) {
-    #padre-nutricion {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .nutricion {
-        width: 100%;
-        
-    }
-}
-
-
-
-
-
-.padre-nutricion {
+  #padre-nutricion {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-right: 20rem;
-    
+  }
 }
-
+@media screen and (max-width: 700px) {
+  .nutricion {
+    width: 100%;
+  }
+}
+.padre-nutricion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 20rem;
+}
 
 .bottom {
-    display: flex;
-    font-size: 25px;
-    
+  display: flex;
+  font-size: 25px;
 }
+
+#productos-entrenamientos {
+  grid-area: productos;
+}
+
+#productos-entrenamientos h2,
+#productos-entrenamientos p {
+  text-align: center;
+}
+
+.profe-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 992) {
+  .profe-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .profe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card-profe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16rem;
+  border: solid 2px #fd849d;
+  padding: 1rem;
+}
+
+.card-profe img {
+  height: 15rem;
+}
+
+/*banner cards*/
+#banner-card {
+  grid-area: banner;
+  background-color: #fd849d;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+#banner-card h2 {
+  text-align: center;
+}
+
+.padre_banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media screen and (max-width: 992) {
+  .padre_banner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .padre_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.banner-caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formulario-contacto {
+  color: black;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 35rem;
+}
+
+.div-formulario {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.input-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: none;
+  padding: 0.6rem 0.3rem;
+  border: none;
+  font-size: 2rem;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/*footer sass*/
+#footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: pink;
+  font-size: 1rem;
+}
+#footer p {
+  color: black;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/*Footer sass*/
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */

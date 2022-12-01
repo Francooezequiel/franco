@@ -1,0 +1,39 @@
+#padre-nutricion {
+    display: grid;
+    grid-area: productos;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .nutricion {
+    width: 80%;
+    padding-left: 20rem;
+  }
+  
+  @media screen and (max-width: 1700px) {
+    #padre-nutricion {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #padre-nutricion {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .nutricion {
+      width: 100%;
+    }
+  }
+  .padre-nutricion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 20rem;
+  }
+  
+  .bottom {
+    display: flex;
+    font-size: 25px;
+  }

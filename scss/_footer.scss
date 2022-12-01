@@ -1,0 +1,17 @@
+/*footer sass*/
+#footer {
+    grid-area: footer;
+    @include flex-center;
+    margin-top: 1rem;
+    background-color: pink;
+    font-size: 1rem;
+    
+    p{
+        color: black;
+        font-size: 1rem;
+        margin-top: 1rem;
+        
+    }
+}
+
+/*Footer sass*/
