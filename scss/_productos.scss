@@ -13,6 +13,11 @@
     row-gap: 2rem;
     justify-items: center;
   }
+
+  .card-profe {
+    background: $fuente-primaria;
+    
+  }
   
   @media screen and (max-width: $pantalla-grande) {
     .profe-card {
@@ -28,7 +33,7 @@
   }
   .card-profe {
     @include flex-column-center;
-    width: 16rem;
+    width: 22rem;
     border: solid 2px $fuente-primaria;
     padding: 1rem;
   }

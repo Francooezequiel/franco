@@ -13,8 +13,9 @@ html {
 }
 
 .logo {
-  height: 20rem;
-  width: 20rem;
+  height: 25rem;
+  width: 25rem;
+  background-color: #fd849d;
 }
 
 ul {
@@ -108,7 +109,7 @@ p {
 .color-nav {
   background-color: #fd849d;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 654px) {
@@ -139,9 +140,12 @@ p {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
   .nutricion {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-left: 1px;
   }
 }
 .padre-nutricion {
@@ -153,7 +157,15 @@ p {
 
 .bottom {
   display: flex;
+  font-size: 30px;
+  border: none;
+  background-color: #fd849d;
+}
+
+.padre-nutricion li {
+  color: black;
   font-size: 25px;
+  font-family: sans-serif;
 }
 
 #productos-entrenamientos {
@@ -172,6 +184,10 @@ p {
   justify-items: center;
 }
 
+.card-profe {
+  background: #fd849d;
+}
+
 @media screen and (max-width: 992) {
   .profe-card {
     grid-template-columns: repeat(2, 1fr);
@@ -188,7 +204,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 16rem;
+  width: 22rem;
   border: solid 2px #fd849d;
   padding: 1rem;
 }
@@ -238,7 +254,10 @@ p {
   font-family: sans-serif;
   display: flex;
   justify-content: center;
-  height: 35rem;
+  background-color: #fd849d;
+  border-radius: 4px;
+  margin: auto;
+  width: 50%;
 }
 
 .div-formulario {
@@ -254,14 +273,35 @@ p {
   background: none;
   padding: 0.6rem 0.3rem;
   border: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .formulario {
   display: flex;
   justify-content: space-around;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
+  background: #fd849d;
+  border: none;
+}
+
+@media screen and (max-width: 530px) {
+  .formulario {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .input-div {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+}
+.sobremi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*footer sass*/
@@ -270,7 +310,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   background-color: pink;
   font-size: 1rem;
 }
