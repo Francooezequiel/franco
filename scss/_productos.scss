@@ -1,47 +1,64 @@
-#productos-entrenamientos {
-    grid-area: productos;
-  }
-  
-  #productos-entrenamientos h2,
-  #productos-entrenamientos p {
-    text-align: center;
-  }
-  
-  .profe-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
-    justify-items: center;
-  }
 
-  .card-profe {
-    background: $fuente-primaria;
-    
-  }
+#mercado {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-area: productos;
+  gap: 2rem;
+  margin-top: 4rem;
   
-  @media screen and (max-width: $pantalla-grande) {
-    .profe-card {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media screen and (max-width: $pantalla-mediana) {
-    .profe-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  .card-profe {
-    @include flex-column-center;
-    width: 22rem;
-    border: solid 2px $fuente-primaria;
-    padding: 1rem;
-  }
   
-  .card-profe img {
-    height: 15rem;
-  }
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: solid 5px rgb(246, 193, 204);
+  background-color: rgb(253,132,157);
+}
+
+.card-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 25px;
+}
+.card-contenedor img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-contenedor h3 {
+  font-size: 20px;
+}
+
+.card-contenedor p {
+  font-size: 25px;
+}
+
+#mercado .contenedor-boton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 20px;
+  border : 5px solid rgb(246, 193, 204); 
+  border-radius: 5px ;
+  padding: 5px ;
+  margin: 5px;
+  background-color: rgb(246, 193, 204);
   
+}
+
+
+.verCarrito {
+  background-color:rgb(253,132,157) ;
+  border: none;
+  color: rgb(42, 42, 42);
+}
+
+
   /*banner cards*/
   #banner-card {
     grid-area: banner;

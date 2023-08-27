@@ -168,50 +168,67 @@ p {
   font-family: sans-serif;
 }
 
-#productos-entrenamientos {
-  grid-area: productos;
-}
-
-#productos-entrenamientos h2,
-#productos-entrenamientos p {
-  text-align: center;
-}
-
-.profe-card {
+#mercado {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 2rem;
-  justify-items: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-area: productos;
+  gap: 2rem;
+  margin-top: 4rem;
+  
+  
 }
 
-.card-profe {
-  background: #fd849d;
-}
-
-@media screen and (max-width: 992) {
-  .profe-card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 767px) {
-  .profe-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.card-profe {
+.contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 22rem;
-  border: solid 2px #fd849d;
-  padding: 1rem;
+  align-content: center;
+  border: solid 5px rgb(246, 193, 204);
+  background-color: rgb(253,132,157);
 }
 
-.card-profe img {
-  height: 15rem;
+.card-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 25px;
 }
+.card-contenedor img {
+  width: 250px;
+  height: 250px;
+}
+
+.card-contenedor h3 {
+  font-size: 20px;
+}
+
+.card-contenedor p {
+  font-size: 25px;
+}
+
+#mercado .contenedor-boton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 20px;
+  border : 5px solid rgb(246, 193, 204); 
+  border-radius: 5px ;
+  padding: 5px ;
+  margin: 5px;
+  background-color: rgb(246, 193, 204);
+  
+}
+
+
+.verCarrito {
+  background-color:rgb(253,132,157) ;
+  border: none;
+  color: rgb(42, 42, 42);
+}
+
+
+
 
 /*banner cards*/
 #banner-card {
